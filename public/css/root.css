@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@1,600&display=swap');
+:root{
+    --color-rosaPastel:#fec7d7;
+    --color-MoradoPastel:#a786de;
+    --color-moradoClaro:#d9d4e7;
+    --color-verdePastel:#85d1ce; 
+    --color-azulPastel:#91c1d7;
+    --color-blanco:#fffffe;
+    --color-negro:#0e172c;
+
+    --fuente-headline:'Nunito', sans-serif;
+    --fuente-grande:34px;
+    --fuente-mediana:18px;
+    --fuente-chica:12px;
+}
+html{
+    box-sizing:border-box;
+}
+*,*::after,*::before{
+    box-sizing:inherit;
+    font-family: var(--fuente-headline);
+    text-align: center;
+    cursor: pointer;
+}
+h3{
+    color:var(--color-negro);
+}
+h1{
+    color:var(--color-negro)
+}
+body{
+    background-color:var(--color-rosaPastel);
+}
+/*Header*/
+header{
+    position:sticky;
+    width: 100%;
+    height: 40vh;
+    margin-bottom: 2%;
+    display: flex;
+    flex-direction: column;
+}
+header h1{
+    font-size: var(--fuente-grande);
+    font-weight: bold;
+}
+.ctn-categoria-animales{
+    width:80%;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+.ctn-categoria-animales h1{
+    color: var(--color-blanco);
+}
+.ctn-categoria-animales .ctn-categoria-perro,
+.ctn-categoria-animales .ctn-categoria-gato{
+
+    background-color: var(--color-negro);
+    width: 20%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    border-radius:5px;
+}
+.ctn-categoria-animales .ct-inactiva{
+    background-color: var(--color-negro);
+    opacity: 0.5;
+}
+.ctn-categoria-animales .ctn-categoria-perro .ctn-categoria-perro-img,
+.ctn-categoria-animales .ctn-categoria-gato .ctn-categoria-gato-img{
+    background-color: var(--color-azulPastel);
+    width: 30%;
+    height: auto;
+    border-radius:50%;
+    align-items: center;
+}
+/*Main*/
+main{
+    width:100%;
+    height:auto;
+    margin:auto;
+    margin-bottom: 2%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    color: var(--color-blanco);
+}
+/*footer*/
+footer{
+    position:sticky;
+    background-color: var( --color-blanco);
+    width: 100%;    
+    height: 10vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-radius:5px;
+}
+footer .icon{
+width:15%;
+height:6vh;
+display: flex;
+justify-content:space-evenly;
+text-decoration: none;
+}
+footer .icon a{
+    width:90%;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    text-decoration: none;
+}
+.icon a img{
+    max-width: 100%;
+    max-height:2rem;
+}
+footer .seccion-act{
+    background-color: var(--color-rosaPastel);
+    border-radius: 80px;
+}
