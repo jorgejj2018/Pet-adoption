@@ -6,27 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
-    <link rel="stylesheet" href="/public/css/home_tarjetas.css">
+    <link rel="stylesheet" href="/public/css/perfil.css">
     <title>Pet Adoption</title>
 </head>
 <body>
-    <header>
-        <h1>Adopta una adorable mascota</h1>
-        <h2>Categoria Mascotas</h2>
-        <section class="ctn-categoria-animales">
-            <div class="ctn-categoria-perro" id="c-perro">
-                <div class="ctn-categoria-perro-img"><img src="/public/assets/img/Categoría=Perros.png" alt="perro"></div>
-                <h1>Perro</h1>
-            </div>
-            <div class="ctn-categoria-gato ct-inactiva" id="c-gato">
-            <div class="ctn-categoria-gato-img"><img src="/public/assets/img/Categoría=Gatos.png" alt="Gatos"></div>
-            <h1>Gato</h1>
-            </div>
-        </section>
-    </header>
-    <main>
         <h1>Perfil</h1>
-    </main>
+        <article class="ctn-icono-perfil">
+            <div class="ctn-img-perfil">
+                <img src="/public/assets/img/golden.png" alt="img-perfil">
+            </div>
+            <div class="ctn-nombre-perfil">
+                <h3>Jorge Quintero</h3>
+                <h3>Editar cuenta</h3>
+            </div>
+        </article>
+
+        <article class="ctn-form-perfil">
+            <form action="">
+                <label for="nombre">Nombre</label>
+                <input type="text" name="nombre" id="nombre" placeholder="Jorge">
+                <label for="apellido">Apellido</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Quintero">
+                <label for="correo">Correo</label>
+                <input type="text" name="correo" id="correo" placeholder="User@gmail.com">
+                <input type="submit" value="Guardar">
+            </form>
+        </article>
+
     <footer>
         <div class="icon inicio-icon">    
             <a href="/#"><img src="/public/assets/img/Property 1=home.png" alt="">

@@ -7,6 +7,7 @@
     --color-azulPastel:#91c1d7;
     --color-blanco:#fffffe;
     --color-negro:#0e172c;
+    --color-transparente:#0001;
 
     --fuente-headline:'Nunito', sans-serif;
     --fuente-grande:34px;
@@ -14,10 +15,14 @@
     --fuente-chica:12px;
 }
 html{
-    box-sizing:border-box;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
-*,*::after,*::before{
-    box-sizing:inherit;
+*,
+*::before,
+*::after{
+    margin: 0;
+    box-sizing: inherit;
     font-family: var(--fuente-headline);
     text-align: center;
     cursor: pointer;
@@ -36,7 +41,6 @@ header{
     position:sticky;
     width: 100%;
     height: 40vh;
-    margin-bottom: 2%;
     display: flex;
     flex-direction: column;
 }
@@ -58,6 +62,7 @@ header h1{
 
     background-color: var(--color-negro);
     width: 20%;
+    height: 10vh;
     display: flex;
     justify-content:space-evenly;
     align-items: center;
@@ -80,7 +85,7 @@ main{
     width:100%;
     height:auto;
     margin:auto;
-    margin-bottom: 2%;
+    margin-bottom:5%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -88,10 +93,11 @@ main{
 }
 /*footer*/
 footer{
-    position:sticky;
+    position: fixed;
     background-color: var( --color-blanco);
     width: 100%;    
     height: 10vh;
+    bottom: 0; 
     display: flex;
     justify-content: space-evenly;
     align-items: center;

@@ -1,0 +1,161 @@
+@import url(/public/css/root.css);
+/*Para hacer que resalte en modo escritorio mi imagen hare lo siguiente*/
+body{
+    background-color: var(--color-transparente);
+}
+
+/*article contenedor img animal*/
+.ctn-detalles-img{
+    max-width:20%;
+    height: 40vh;
+    margin: 2% auto;
+}
+.ctn-detalles-img .ctn-img-animal{
+    width: 100%;
+    height:inherit;
+    position:relative;
+}
+.ctn-detalles-img .ctn-img-animal img{
+    width: 100%;
+    height: inherit;
+}
+.ctn-detalles-img .btn-detalles-atras{
+    position:absolute;
+    background-color: var(--color-negro);
+    width:3%;
+    height: 5vh;
+    margin-left:1%;
+    top:50px;
+    border-radius: 50%;
+    display: flex;
+    align-content:center;
+    justify-content: center;
+}
+/*article contenedor detalles animal*/
+.ctn-detalles-animal{
+    background-color:var(--color-blanco);
+    max-width: 100%;
+    height:auto;
+}
+/*article contenedor genero animal*/
+.ctn-detalles-animal .seccion-genero{
+    width: 100%;
+}
+.ctn-detalles-animal .seccion-genero .ctn-genero{
+    width:25%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 2%;
+}
+.seccion-genero .ctn-genero .genero{
+    width:25%;
+    display: flex;
+    justify-content: space-between;
+}
+.ctn-detalles-animal .seccion-genero .ctn-raza{
+    width:20%;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 2%;
+    font-size: var(--fuente-chica); 
+}
+.ctn-detalles-animal .seccion-genero .ctn-ubicacion{
+    width:20%;
+    display: flex;
+    justify-content:flex-start;
+    margin: auto;
+    align-items: center;
+    margin-bottom: 2%;
+    font-size: var(--fuente-chica);
+}
+.seccion-genero .ctn-ubicacion .p-ubicacion{
+width:75%;
+margin-left: 5%;
+}
+/*article contenedor personalidad animal*/
+.ctn-detalles-animal .seccion-personalidad{
+    width: 100%;
+    margin-bottom:2%;
+
+}
+.ctn-detalles-animal .seccion-personalidad .ctn-personalidad{
+    width:25%;
+    height:auto;
+    margin: auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.seccion-personalidad .ctn-personalidad .titulo-personalidad{
+    width: 100%;
+    margin-bottom: 2%;
+}
+.ctn-personalidad .titulo-personalidad h2{
+    text-align:start;
+    font-size: var(--fuente-mediana);
+}
+.seccion-personalidad .ctn-personalidad .personalidad{
+    width:25%;
+    height:inherit;
+    border:solid 2px  var(--color-moradoClaro);
+    border-radius: 8px;
+    margin-left:4%;
+}
+
+
+/*article contenedor historia animal*/
+.ctn-detalles-animal .seccion-historia{
+    width:25%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+.ctn-detalles-animal .seccion-historia h2{
+    text-align: start;
+    margin-bottom: 1%;
+    font-size: var(--fuente-mediana);
+}
+.ctn-detalles-animal .seccion-historia .p-historia{
+    text-align: start;
+    margin-bottom: 1%;
+    font-size: var(--fuente-chica);
+}
+/*article contenedor conectar animal*/
+.ctn-detalles-animal .seccion-conectar{
+    width: 25%;
+    margin: auto;
+    display: flex;
+}
+.ctn-detalles-animal .seccion-conectar .ctn-usuario-conectar{
+width:60%;
+height:6vh;
+display: flex;
+justify-content: space-evenly;
+}
+.seccion-conectar .ctn-usuario-conectar .ctn-img-conectar{
+ width:30%;
+ height: auto;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+ border:solid 2px var(--color-verdePastel);
+}
+.ctn-usuario-conectar .ctn-publicado-por h6{
+    text-align: start;
+}
+
+.ctn-detalles-animal .seccion-conectar .btn-conectar{
+    align-self:center;
+    width:40%;
+    border-radius: 80px;
+    background-color: var(--color-negro);
+}
+.seccion-conectar .btn-conectar h3{
+    color: var(--color-blanco);
+
+}
