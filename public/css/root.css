@@ -27,11 +27,8 @@ html{
     text-align: center;
     cursor: pointer;
 }
-h3{
+h1,h3{
     color:var(--color-negro);
-}
-h1{
-    color:var(--color-negro)
 }
 body{
     background-color:var(--color-rosaPastel);
@@ -124,4 +121,60 @@ footer .icon a{
 footer .seccion-act{
     background-color: var(--color-rosaPastel);
     border-radius: 80px;
+}
+
+/*Medida Para Table*/
+@media screen and (min-width:768px) and (max-width:1040px){
+}
+
+/*Medida para movil*/
+@media screen and (min-width:300px) and (max-width:767px){
+    body{
+        background-color: azure;
+    }
+    header{
+        height: auto;
+    }
+    header h1,h2{
+        font-size: var(--fuente-mediana);
+        text-align: start;
+        width:80%;
+        margin:1% 1%;
+    }
+    .ctn-categoria-animales{
+        width: 100%;
+        margin-top: 0.5%;
+    }
+    .ctn-categoria-animales .ctn-categoria-perro,
+    .ctn-categoria-animales .ctn-categoria-gato{        
+        width:40%;
+        justify-content:space-between;
+    }
+    .ctn-categoria-animales .ctn-categoria-perro .ctn-categoria-perro-img,
+    .ctn-categoria-animales .ctn-categoria-gato .ctn-categoria-gato-img{
+        width:50%;
+        margin-left:5%;
+    }
+    .ctn-categoria-animales .ctn-categoria-perro h1,
+    .ctn-categoria-animales .ctn-categoria-gato h1{
+        width:50%;
+        margin-left:5%;
+    }
+     main{
+         background-color: rgb(124, 57, 57);
+    }
+    footer{
+        height:10vh;
+        border:5px 5px 0px 0px;
+    }
+    footer .icon{
+        width:8%;
+        }
+        .icon a h3{
+            font-size: var(--fuente-chica);
+        }
+        footer .seccion-act{
+            width: 40%;
+        }
+    
 }

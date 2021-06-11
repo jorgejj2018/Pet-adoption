@@ -1,0 +1,70 @@
+@import url(/public/css/root.css);
+
+.ctn-icono-mensaje{
+    background-color: var(--color-blanco);
+    width: 100%;
+    height:15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-radius:4px 4px 0px 0px;
+    margin-bottom: 0%;
+}
+.ctn-icono-mensaje .btn-detalles-atras{
+    background-color:var(--color-negro);
+    width: 3%;
+    height: 5vh;
+    border-radius: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.ctn-icono-mensaje .ctn-img-mensaje{
+    width: 25%;
+    height:inherit;
+    display: flex;
+    margin-right: 30%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ctn-icono-mensaje .ctn-img-mensaje img{
+    border-radius:50%;
+    height:8vh;
+    width:20%;
+}
+.ctn-icono-mensaje .ctn-img-mensaje h3{
+    font-size: var(--fuente-mediana);
+}
+
+.ctn-conversacion{
+    width: 100%;
+    height: auto;
+    margin:auto;
+}
+.ctn-conversacion h2{
+    text-align: end;
+    font-size: var(--fuente-mediana);
+    margin-right: 5%;
+    margin-top: 2%;
+    margin-bottom: 4%;
+}
+.ctn-conversacion h3{
+    text-align: start;
+    font-size: var(--fuente-mediana);
+    margin-left: 5%;
+    margin-bottom:4%;
+}
+
+.ctn-form-mensaje form input{
+    position: fixed;
+    width:100%;
+    height:6vh;
+    font-size: var(--fuente-mediana);
+    font-family: var(--fuente-headline);
+    text-align: start;
+    bottom: 0;
+    left: 0;
+    border-radius:4px;
+    border:none;
+    padding:1rem;
+}
