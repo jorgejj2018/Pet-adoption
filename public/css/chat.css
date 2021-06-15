@@ -6,7 +6,6 @@ h5,time{
     font-size: var(--fuente-chica);
     font-family: var(--fuente-headline);
 }
-
 .ctn-chats{
     width: 45%;
     height: auto;
@@ -28,7 +27,6 @@ h5,time{
 .ctn-chats .ctn-chat .ctn-img-chat{
     width:12%;
     height:8vh;
-    background-color: darkcyan;
     border-radius: 50%;
 }
 .ctn-chat .ctn-img-chat img{
@@ -74,4 +72,31 @@ h5,time{
     width:80%;
     height:4vh;
     margin: auto;
+}
+/*Medida para table*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .ctn-chats{
+        width:85%;
+    }
+    .ctn-info-chat .ctn-mensaje-chat .p-mensaje-char{
+        font-size: var(--fuente-chica);
+    }
+}
+/*Medida para movil*/
+@media screen and (min-width:300px) and (max-width:767px){
+    .ctn-chats{
+        width:100%;
+        margin-bottom:25%;
+    }
+    .ctn-chats .ctn-chat{
+        width:95%;
+        height:15vh;
+    }
+    .ctn-chats .ctn-chat .ctn-img-chat{
+        width: 15%;
+    }
+    .ctn-info-chat .ctn-mensaje-chat .p-mensaje-char{
+        font-size: var(--fuente-chica);
+        margin-top: -4%;
+    }
 }

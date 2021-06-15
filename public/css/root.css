@@ -8,6 +8,7 @@
     --color-blanco:#fffffe;
     --color-negro:#0e172c;
     --color-transparente:#0001;
+    --color-grey:grey;
 
     --fuente-headline:'Nunito', sans-serif;
     --fuente-grande:34px;
@@ -125,13 +126,15 @@ footer .seccion-act{
 
 /*Medida Para Table*/
 @media screen and (min-width:768px) and (max-width:1040px){
+    .ctn-categoria-animales .ctn-categoria-perro,
+    .ctn-categoria-animales .ctn-categoria-gato{        
+        width:40%;
+        justify-content:space-around;
+    }
 }
 
 /*Medida para movil*/
 @media screen and (min-width:300px) and (max-width:767px){
-    body{
-        background-color: azure;
-    }
     header{
         height: auto;
     }
@@ -159,9 +162,6 @@ footer .seccion-act{
     .ctn-categoria-animales .ctn-categoria-gato h1{
         width:50%;
         margin-left:5%;
-    }
-     main{
-         background-color: rgb(124, 57, 57);
     }
     footer{
         height:10vh;

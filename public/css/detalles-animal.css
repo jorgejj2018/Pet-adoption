@@ -36,6 +36,8 @@ body{
     background-color:var(--color-blanco);
     max-width: 100%;
     height:auto;
+    display: flex;
+    flex-direction: column;
 }
 /*article contenedor genero animal*/
 .ctn-detalles-animal .seccion-genero{
@@ -157,5 +159,58 @@ justify-content: space-evenly;
 }
 .seccion-conectar .btn-conectar h3{
     color: var(--color-blanco);
+}
 
+/*Medida para table*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .ctn-detalles-img{
+        max-width:50%;
+    }
+    .ctn-detalles-img .btn-detalles-atras{
+        width:5%;
+        height:6vh;
+    }
+    .ctn-detalles-animal .seccion-genero .ctn-genero{
+        width:50%;
+    }
+    .ctn-detalles-animal .seccion-genero .ctn-raza{
+        width: 35%;
+    }
+    .ctn-detalles-animal .seccion-genero .ctn-ubicacion{
+        width:30%;
+        margin:auto 25%;
+    }
+    .ctn-detalles-animal .seccion-personalidad .ctn-personalidad,
+    .ctn-detalles-animal .seccion-historia,
+    .ctn-detalles-animal .seccion-conectar{
+    width: 50%;
+    }
+}
+/*Medida para movil*/
+@media screen and (min-width:300px) and (max-width:767px){
+    .ctn-detalles-img{
+        max-width:100%;
+    }
+    .ctn-detalles-img .btn-detalles-atras{
+        width:10%;
+        height:5vh;
+    }
+    .ctn-detalles-animal .seccion-genero .ctn-genero{
+        width:100%;
+    }
+    .ctn-detalles-animal .seccion-genero .ctn-raza{
+        width: 60%;
+    }
+    .ctn-detalles-animal .seccion-genero .ctn-ubicacion{
+        width:70%;
+        margin:auto 0%;
+    }
+    .ctn-detalles-animal .seccion-personalidad .ctn-personalidad,
+    .ctn-detalles-animal .seccion-historia,
+    .ctn-detalles-animal .seccion-conectar{
+    width: 100%;
+    }
+    .ctn-personalidad .personalidad{
+        font-size: var(--fuente-chica)
+    }
 }

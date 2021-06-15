@@ -40,21 +40,47 @@
     width: 100%;
     height: auto;
     margin:auto;
+    margin-bottom: 10%;
 }
-.ctn-conversacion h2{
-    text-align: end;
-    font-size: var(--fuente-mediana);
-    margin-right: 5%;
-    margin-top: 2%;
+.ctn-conversacion .ctn-conversacion-yo{
+    width: 30%;
+    height:auto;
+    margin: 2% 60%;
+    display: flex;
+    flex-wrap: wrap;
     margin-bottom: 4%;
+    word-wrap: break-word;
+    
 }
-.ctn-conversacion h3{
-    text-align: start;
+.ctn-conversacion-yo h2,
+.ctn-conversacion-otro h2{
+    background-color:var(--color-blanco);
+    width: 100%;
+    height: auto;
+    text-align:start;
     font-size: var(--fuente-mediana);
-    margin-left: 5%;
-    margin-bottom:4%;
+    padding:1rem;
+    border-radius: 8px;
 }
-
+.ctn-conversacion .ctn-conversacion-otro{
+    width: 30%;
+    height:auto;
+    margin: 2% 3%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 4%;
+    word-wrap: break-word;
+    color: var(--color-blanco);
+}
+.ctn-conversacion-otro h2{
+    background-color:var(--color-grey);
+    width: 100%;
+    height: auto;
+    text-align:start;
+    font-size: var(--fuente-mediana);
+    padding:1rem;
+    border-radius: 8px;
+}
 .ctn-form-mensaje form input{
     position: fixed;
     width:100%;
@@ -67,4 +93,59 @@
     border-radius:4px;
     border:none;
     padding:1rem;
+}
+/*Medida para table*/
+@media screen and (min-width:768px) and (max-width:1023px){
+    .ctn-icono-mensaje .btn-detalles-atras{
+        width:5%;
+        height:5vh;
+    }
+    .ctn-icono-mensaje .ctn-img-mensaje{
+        width: 35%;
+    }
+    .ctn-icono-mensaje .ctn-img-mensaje img{
+        border-radius:50%;
+        height:8vh;
+        width:20%;
+    }
+    .ctn-conversacion{
+        margin-bottom: 12%;
+    }
+
+}
+
+/*Medida para movil*/
+@media screen and (min-width:300px) and (max-width:767px){
+    .ctn-icono-mensaje{
+        justify-content: space-evenly;
+
+    }
+    .ctn-icono-mensaje .btn-detalles-atras{
+        width:10%;
+        height:5vh;
+        margin-top: 3%;
+        align-self:flex-start;
+    }
+    .ctn-icono-mensaje .ctn-img-mensaje{
+        width:70%;
+        height:inherit;
+        margin-right: 0%;
+    }
+    .ctn-icono-mensaje .ctn-img-mensaje img{
+        border-radius:50%;
+        height:8vh;
+        width:30%;
+    }
+    .ctn-conversacion{
+        margin-bottom: 12%;
+    }
+    .ctn-conversacion .ctn-conversacion-yo{
+        width: 70%;
+        margin: 2% 25%; 
+    }
+    .ctn-conversacion .ctn-conversacion-otro{
+        width: 70%;
+        margin: 2% 5%;
+
+    }
 }
