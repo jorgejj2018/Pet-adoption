@@ -6,18 +6,18 @@
       "edad":"3 meses",
       "historia": "Es un perrito muy lindo y cariñoso, tiene 5 hermanitos más y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
       "ubicacion":"4140 Parker Rd. Allentown, New Mexico 31134",
-      "imagen":"/public/assets/img/golden.png",
+      "imagen":"/public/assets/img/animales/golden.png",
       "id": 1
     }
   ],
   "gato": [
     {
-        "nombre": "Tom",
-        "raza": "persa",
-        "edad":"5 meses",
+        "nombre": "olivia",
+        "raza": "angora",
+        "edad":"7 meses",
         "historia": "Es un gatico muy lindo y cariñoso, tiene 1 hermanitos y por cuestiones de espacio y tiempo no podremos cuidar a todos, nuestra misión es encontrar la familia ideal para él y seguro que tú eres la persona indicada.",
         "ubicacion":"4140 Parker Rd. Allentown, New Mexico 51134",
-        "imagen":"/public/assets/img/golden.png",
+        "imagen":"/public/assets/img/animales/Gangora.jpge",
         "id": 1
       }
   ]
